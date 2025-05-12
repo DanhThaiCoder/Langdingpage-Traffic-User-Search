@@ -9,7 +9,6 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -582,22 +581,6 @@
       scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
     }
   };
-</script>
-
-<script>
-  $(document).ready(function () {
-    $("a").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-          window.location.hash = hash;
-        });
-      }
-    });
-  });
 </script>
 
 <script>
